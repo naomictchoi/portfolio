@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Interact New Media Production" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+ <body>
+
+
+<!--
+ 	<div class="fixed">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name"> 
+        	<h1><a href="#">Interact New Media Production</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+	    <section class="top-bar-section">
+	    	<ul class="right button-group">
+		      <li><a href="#">About Us</a></li>
+		      <li><a href="#">Services</a></li>
+		      <li><a href="#">Contact Us</a></li>
+	    	</ul>
+  		</section>
+    </nav>
+	</div>
+-->
+
+    <%= yield %>
+ 
+    <%= javascript_include_tag "application" %>
+</body>
+</html>
