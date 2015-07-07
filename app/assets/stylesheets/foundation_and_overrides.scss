@@ -1497,6 +1497,7 @@ body{
    margin-right: auto;
    max-width: initial;
    border: 1000px;
+   color: white;
 }
 
 .large-4 h4 {
@@ -1508,6 +1509,12 @@ body{
 .large-4 li {
 	color: #7E7EFF;
 }
+
+.icon-bar {
+	padding-right: 25%;
+	padding-left: 35%;
+}
+
 
 
 $icon-bar-bg: $black;
